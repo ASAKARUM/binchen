@@ -1,0 +1,7 @@
+@inproceedings{liu2022cycle,
+  title={Cycle self-training for semi-supervised object detection with distribution consistency reweighting},
+  author={Liu, Hao and Chen, Bin and Wang, Bo and Wu, Chunpeng and Dai, Feng and Wu, Peng},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={6569--6578},
+  year={2022}
+}

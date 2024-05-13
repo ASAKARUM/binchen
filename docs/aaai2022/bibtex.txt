@@ -1,0 +1,9 @@
+@inproceedings{dai2022unbiased,
+  title={Unbiased iou for spherical image object detection},
+  author={Dai, Feng and Chen, Bin and Xu, Hang and Ma, Yike and Li, Xiaodong and Feng, Bailan and Yuan, Peng and Yan, Chenggang and Zhao, Qiang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={1},
+  pages={508--515},
+  year={2022}
+}
