@@ -243,7 +243,7 @@
 			<p>
 				<center>
 					<br>
-					&copy; Bin Chen | <a href="https://asakarum.github.io/binchen/">Last updated: June, 2024</a>
+					&copy; Bin Chen | Last updated: June, 2024
 				</center>
 				<center>
 					<a href="https://www.easycounter.com/">
@@ -254,24 +254,25 @@
 			</p>
 		</div>
 
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				fetch('scripts/scholar.json')
-					.then(response => response.json())
-					.then(data => {
-						console.info(data)
-						document.querySelectorAll('.article-analysis img').forEach(img => {
-							const badgeId = img.parentNode.href.match(/citation_for_view=([^&]+)/)[1];
-							const num_citation=data['publications'][badgeId]['num_citations']
-							img.src = `https://img.shields.io/badge/Citations-${num_citation}-blue.svg?logo=google-scholar`;
-							img.parentNode.href=`https://scholar.google.com/citations?view_op=view_citation&citation_for_view=${badgeId}`;
-						});
-					})
-					.catch(error => {
-						console.error('Error loading badges:', img, error);
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			fetch('scripts/scholar.json')
+				.then(response => response.json())
+				.then(data => {
+					console.info(data)
+					document.querySelectorAll('.article-analysis img').forEach(img => {
+						const badgeId = img.parentNode.href.match(/citation_for_view=([^&]+)/)[1];
+						const num_citation=data['publications'][badgeId]['num_citations']
+						img.src = `https://img.shields.io/badge/Citations-${num_citation}-blue.svg?logo=google-scholar`;
+						img.parentNode.href=`https://scholar.google.com/citations?view_op=view_citation&citation_for_view=${badgeId}`;
 					});
-			});
-		</script>	
+				})
+				.catch(error => {
+					console.error('Error loading badges:', img, error);
+				});
+		});
+	</script>
+
 </body>
 
 </html>
