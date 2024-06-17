@@ -89,6 +89,7 @@
 					<td padding-bottom="4px"><b>Unbiased IoU for Spherical Image Object Detection</b> <br>
 						Feng Dai, <b>Bin Chen</b>, Hang Xu, Yike Ma, Xiaodong Li, Bailan Feng, Yuan Peng, Chenggang Yan, Qiang Zhao†<br>
 						<i><b>AAAI 2022</b> (CCF-A)</i>
+						<a href="https://scholar.google.com/citations?view_op=view_citation&citation_for_view=3XvSeK0AAAAJ:9yKSN-GCB0IC"><img src="" style="height: 1em;">
 						<br>
 						<a
 							href="https://ojs.aaai.org/index.php/AAAI/article/view/19929">PDF</a>
@@ -109,6 +110,7 @@
 					<td padding-bottom="4px"><b>Cycle Self-Training for Semi-Supervised Object Detection with Distribution Consistency Reweighting</b> <br>
 						Hao Liu*, <b>Bin Chen</b>*, Bo Wang, Chunpeng Wu, Feng Dai, Peng Wu<br>
 						<i><b>ACM MM 2022</b> (CCF-A)</i>
+						<a href="https://scholar.google.com/citations?view_op=view_citation&citation_for_view=3XvSeK0AAAAJ:2osOgNQ5qMEC"><img src="" style="height: 1em;">
 						<br>
 						<a href="https://dl.acm.org/doi/abs/10.1145/3503161.3548040">PDF</a> /
 						<a href="docs/mm2022/supp.pdf">Supp</a> /
@@ -126,6 +128,7 @@
 						<br>
 						Xinyuan Liu, Hang Xu, <b>Bin Chen</b>, Qiang Zhao, Yike Ma, Chenggang Yan, Feng Dai†<br>
 						<i><b>IJCAI 2023</b> (CCF-A)</i>
+						<a href="https://scholar.google.com/citations?view_op=view_citation&citation_for_view=3XvSeK0AAAAJ:qjMakFHDy7sC"><img src="" style="height: 1em;">
 						<br>
 						<a href="https://www.ijcai.org/proceedings/2023/0137">PDF</a> /
 						Supp /
@@ -240,7 +243,7 @@
 			<p>
 				<center>
 					<br>
-					&copy; Bin Chen | Last updated: May. 2024.
+					&copy; Bin Chen | <a href="https://asakarum.github.io/binchen/">Last updated: June, 2024</a>
 				</center>
 				<center>
 					<a href="https://www.easycounter.com/">
@@ -251,6 +254,24 @@
 			</p>
 		</div>
 
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				fetch('scripts/scholar.json')
+					.then(response => response.json())
+					.then(data => {
+						console.info(data)
+						document.querySelectorAll('.article-analysis img').forEach(img => {
+							const badgeId = img.parentNode.href.match(/citation_for_view=([^&]+)/)[1];
+							const num_citation=data['publications'][badgeId]['num_citations']
+							img.src = `https://img.shields.io/badge/Citations-${num_citation}-blue.svg?logo=google-scholar`;
+							img.parentNode.href=`https://scholar.google.com/citations?view_op=view_citation&citation_for_view=${badgeId}`;
+						});
+					})
+					.catch(error => {
+						console.error('Error loading badges:', img, error);
+					});
+			});
+		</script>	
 </body>
 
 </html>

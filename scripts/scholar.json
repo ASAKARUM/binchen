@@ -1,0 +1,70 @@
+{
+    "container_type": "Author",
+    "filled": [
+        "basics",
+        "publications"
+    ],
+    "scholar_id": "3XvSeK0AAAAJ",
+    "source": "AUTHOR_PROFILE_PAGE",
+    "name": "Bin Chen (陈 彬)",
+    "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=3XvSeK0AAAAJ&citpid=8",
+    "affiliation": "Institute of Computing Technology, Chinese Academy of Sciences",
+    "organization": 8095408014149788983,
+    "interests": [
+        "Computer Vision",
+        "Object Detection"
+    ],
+    "email_domain": "@ict.ac.cn",
+    "citedby": 18,
+    "publications": {
+        "3XvSeK0AAAAJ:9yKSN-GCB0IC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Unbiased iou for spherical image object detection",
+                "pub_year": "2022",
+                "citation": "Proceedings of the AAAI Conference on Artificial Intelligence 36 (1), 508-515, 2022"
+            },
+            "filled": false,
+            "author_pub_id": "3XvSeK0AAAAJ:9yKSN-GCB0IC",
+            "num_citations": 12,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12087759188661035598",
+            "cites_id": [
+                "12087759188661035598"
+            ]
+        },
+        "3XvSeK0AAAAJ:2osOgNQ5qMEC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Cycle self-training for semi-supervised object detection with distribution consistency reweighting",
+                "pub_year": "2022",
+                "citation": "Proceedings of the 30th ACM International Conference on Multimedia, 6569-6578, 2022"
+            },
+            "filled": false,
+            "author_pub_id": "3XvSeK0AAAAJ:2osOgNQ5qMEC",
+            "num_citations": 4,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3047326312758629853",
+            "cites_id": [
+                "3047326312758629853"
+            ]
+        },
+        "3XvSeK0AAAAJ:qjMakFHDy7sC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Sph2Pob: boosting object detection on spherical images with planar oriented boxes methods",
+                "pub_year": "2023",
+                "citation": "Proceedings of the International Joint Conference on Artificial Intelligence ��, 2023"
+            },
+            "filled": false,
+            "author_pub_id": "3XvSeK0AAAAJ:qjMakFHDy7sC",
+            "num_citations": 2,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12832594709099459459",
+            "cites_id": [
+                "12832594709099459459"
+            ]
+        }
+    },
+    "updated": "2024-06-17 17:22:42.412918"
+}
